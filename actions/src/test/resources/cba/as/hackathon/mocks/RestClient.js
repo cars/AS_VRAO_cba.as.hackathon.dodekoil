@@ -23,12 +23,12 @@
 			var payload = {
 				"transactionId" : 1
 			  }
-			return bundleResponse(payload, 200);
+			return bundleResponse(JSON.stringify(payload), 200);
 		} else if (urlTemplate == "/api/transaction/delete") {
 			var payload = {
 				"transactionId" : 5
 			  }
-			return bundleResponse(payload, 200);
+			return bundleResponse(JSON.stringify(payload), 200);
 		} else if (urlTemplate == "/api/transaction/commit") {
 			return bundleResponse("", 200);
 		}
