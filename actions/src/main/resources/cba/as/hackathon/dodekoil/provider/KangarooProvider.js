@@ -17,7 +17,7 @@
 		}
 
 		this.deleteCi = function(id) {
-			this.restClient.delete("/api/record/{id}", [id], null);
+			return this.restClient.delete("/api/record/{id}", [id], null);
 		}
 	}, null, ProviderBase);
 })
